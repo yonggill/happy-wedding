@@ -10,7 +10,7 @@ body {
 
   .bread-layer {
     text-align: center;
-    background: url("../img/layer-1-bg.svg") center 0 no-repeat;
+    background: url("/static/img/layer-1-bg.svg") center 0 no-repeat;
     color: white;
     height: 640px;
     padding-top: 64px;
@@ -49,7 +49,7 @@ body {
     text-align: center;
     height: 435px;
     padding-top: 80px;
-    background: url("../img/layer-2-bg.svg") center 0 no-repeat;
+    background: url("/static/img/layer-2-bg.svg") center 0 no-repeat;
     .who-is-guide {
       font-size: 18px;
       line-height: 21px;
@@ -77,7 +77,7 @@ body {
     text-align: center;
     height: 546px;
     padding-top: 14px;
-    background: url("../img/layer-3-bg.svg") center 0 no-repeat;
+    background: url("/static/img/layer-3-bg.svg") center 0 no-repeat;
     .our-story-title {
       span {
         font-size: 16px;
@@ -94,9 +94,20 @@ body {
     .bx-wrapper {
       border: none;
       height: 400px !important;
+      background: transparent;
+      box-shadow: none;
       display: inline-block;
+      .image-slider-box {
+        height: 400px;
+        background: transparent;
+      }
+      .slider-img {
+        border-radius: 32px;
+        height: 400px;
+      }
       .bx-viewport {
         height: 400px !important;
+        background: transparent;
       }
       .bx-pager {
         .bx-pager-item {
@@ -115,12 +126,6 @@ body {
       width: 100%;
       background: transparent;
       max-height: 400px;
-      .image-slider-box {
-        height: 400px;
-      }
-      .slider-img {
-        height: 400px;
-      }
     }
   }
 
@@ -147,6 +152,12 @@ body {
       height: 192px;
       width: 100%;
       margin-bottom: 16px;
+      border-radius: 32px;
+      overflow: hidden;
+      *:first-child {
+      overflow: hidden;
+        border-radius: 32px;
+      }
     }
     .how-to-address {
       text-align: left;
@@ -196,6 +207,65 @@ body {
         margin-top: 1px;
         width: 20px;
       }
+    }
+    .call-to-h {
+      margin: 0 auto 27px;
+    }
+    .call-to-w {
+      margin: 0 auto;
+    }
+    .call-to-h > .call-to-info > .call-to-guide {
+      color: #0D35B8;
+    }
+    .call-to-w > .call-to-info > .call-to-guide {
+      color: #F77747;
+    }
+    .call-to-h, .call-to-w {
+      text-align: left;
+      width: 210px;
+      font-family: GangwonEduAll, sans-serif;
+      position: relative;
+      .call-to-info {
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
+        vertical-align: top;
+        .call-to-guide {
+          margin-right: 12px;
+        }
+        .call-to-name {
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 18px;
+        }
+      }
+      .call-by-cellphone {
+        right: 40px;
+      }
+      .call-by-mail {
+        right: 0;
+      }
+      .call-by-cellphone, .call-by-mail {
+        img {
+          width: 32px;
+          margin-top: -6px;
+        }
+        top: 0;
+        vertical-align: top;
+        display: inline-block;
+        position: absolute;
+      }
+    }
+    .btn-send-heart {
+      border: 1px solid #f77747;
+      border-radius: 23px;
+      background-color: #fff;
+      padding: 6px 24px 10px;
+      color: #f77747;
+      font-family: GangwonEduAll, sans-serif;
+      font-size: 16px;
+      line-height: 1;
+      margin-top: 54px;
     }
   }
 
