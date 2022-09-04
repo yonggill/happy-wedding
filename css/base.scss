@@ -1,0 +1,218 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+* {box-sizing: border-box;}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: GangwonEduAll, sans-serif;
+
+  .bread-layer {
+    text-align: center;
+    background: url("../img/layer-1-bg.svg") center 0 no-repeat;
+    color: white;
+    height: 640px;
+    padding-top: 64px;
+    .page-title {
+      margin-top: 0;
+      font-size: 38px;
+      line-height: 51px;
+      font-family: PyeongChang, sans-serif;
+      margin-bottom: 78px;
+    }
+    .page-title-icon {
+      margin-bottom: 84px;
+    }
+    .bread-guide {
+      .bread-name {
+        span {
+          font-size: 24px;
+          line-height: 32px;
+          font-family: PyeongChang, sans-serif;
+        }
+        .bread-guide-icon {
+          vertical-align: top;
+          height: 32px;
+
+        }
+      }
+      .bread-date-with-location {
+        margin-top: 4px;
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  .who-is-layer {
+    text-align: center;
+    height: 435px;
+    padding-top: 80px;
+    background: url("../img/layer-2-bg.svg") center 0 no-repeat;
+    .who-is-guide {
+      font-size: 18px;
+      line-height: 21px;
+      color: #000;
+      margin-bottom: 48px;
+    }
+    .who-is-detail {
+      .house-order {
+        vertical-align: bottom;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+        margin-left: 13px;
+        margin-right: 13px;
+      }
+      .parents-name, .child-name {
+        font-size: 18px;
+        line-height: 21px;
+        color: #000;
+        font-weight: 600;
+      }
+    }
+  }
+  .our-story-layer {
+    text-align: center;
+    height: 546px;
+    padding-top: 14px;
+    background: url("../img/layer-3-bg.svg") center 0 no-repeat;
+    .our-story-title {
+      span {
+        font-size: 16px;
+        line-height: 21px;
+        font-family: PyeongChang, sans-serif;
+        color: white;
+      }
+      .our-story-title-wheel {
+        vertical-align: top;
+        width: 20px;
+        margin-top: 1px;
+      }
+    }
+    .bx-wrapper {
+      border: none;
+      height: 400px !important;
+      display: inline-block;
+      .bx-viewport {
+        height: 400px !important;
+      }
+      .bx-pager {
+        .bx-pager-item {
+          .bx-pager-link {
+            background: white;
+            width: 4px;
+            height: 4px;
+            &.active {
+              background: #F77747;
+            }
+          }
+        }
+      }
+    }
+    .our-story-slider{
+      width: 100%;
+      background: transparent;
+      max-height: 400px;
+      .image-slider-box {
+        height: 400px;
+      }
+      .slider-img {
+        height: 400px;
+      }
+    }
+  }
+
+  .how-to-come-layer {
+    text-align: center;
+    padding-top: 51px;
+    padding-left: 32px;
+    padding-right: 32px;
+    .how-to-come-title {
+      margin-bottom: 25px;
+      span {
+        font-size: 16px;
+        line-height: 21px;
+        font-family: PyeongChang, sans-serif;
+        color: #000;
+      }
+      .how-to-come-title-wheel {
+        vertical-align: top;
+        margin-top: 1px;
+        width: 20px;
+      }
+    }
+    .how-to-come-map {
+      height: 192px;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    .how-to-address {
+      text-align: left;
+      margin-bottom: 30px;
+      .address-title {
+        margin-top: 0;
+        display: inline-block;
+        font-family: GangwonEduAll, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        span.address-detail {
+          line-height: 18px;
+          font-size: 16px;
+          font-weight: 300;
+          font-family: GangwonEduAll, sans-serif;
+        }
+      }
+      .copy-to-clip {
+        display: inline-block;
+        float: right;
+        background: #F77747;
+        border-radius: 23px;
+        padding: 8px 24px 10px;
+        font-family: GangwonEduAll, sans-serif;
+        color: white;
+        font-size: 16px;
+        line-height: 16px;
+        border: none;
+      }
+    }
+  }
+  .how-to-call-layer {
+    height: 331px;
+    padding-top: 30px;
+    text-align: center;
+    .how-to-call-title {
+      margin-bottom: 53px;
+      span {
+        font-size: 16px;
+        line-height: 21px;
+        font-family: PyeongChang, sans-serif;
+        color: #000;
+      }
+      .how-to-call-title-wheel {
+        vertical-align: top;
+        margin-top: 1px;
+        width: 20px;
+      }
+    }
+  }
+
+  .sorry-layer {
+    text-align: center;
+    background: #F1F1F1;
+    padding-top: 32px;
+    padding-bottom: 24px;
+    .sorry-description {
+      color: #000;
+      font-family: GangwonEduAll, sans-serif;
+      font-size: 16px;
+      line-height: 18px;
+      margin-bottom: 34px;
+    }
+    .last-lupin {
+      display: inline-block;
+    }
+  }
+}

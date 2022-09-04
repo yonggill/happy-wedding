@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'GangwonEduAll';
+    src: url('GangwonEduAllLight.woff2') format('woff2'),
+        url('GangwonEduAllLight.woff') format('woff'),
+        url('GangwonEduAllLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GangwonEduAll';
+    src: url('GangwonEduAllBold.woff2') format('woff2'),
+        url('GangwonEduAllBold.woff') format('woff'),
+        url('GangwonEduAllBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PyeongChang';
+    src: url('PyeongChangPeace-BoldA1.woff2') format('woff2'),
+        url('PyeongChangPeace-BoldA1.woff') format('woff'),
+        url('PyeongChangPeace-BoldA1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PyeongChang';
+    src: url('PyeongChangPeace-LightA1.woff2') format('woff2'),
+        url('PyeongChangPeace-LightA1.woff') format('woff'),
+        url('PyeongChangPeace-LightA1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

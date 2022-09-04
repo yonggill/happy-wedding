@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta property="og:type" content="website"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/fonts/stylesheet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=l7xx7c8ca1a333db4b12a716a65c628b6212"></script>
+    <script type="text/javascript">
+        function initTmap(){
+            var map = new Tmapv2.Map("mapDiv",
+                {
+                    center: new Tmapv2.LatLng(37.566481622437934,126.98502302169841), // 지도 초기 좌표
+                    width: "890px",
+                    height: "400px",
+                    zoom: 15
+                });
+        }
+    </script>
+</head>
+<body>
+    <div class="bread-layer">
+        <p class="page-title">저희,결혼합니다</p>
+        <img class="page-title-icon" src="img/signature-image.svg">
+        <div class="bread-guide">
+            <div class="bread-name">
+                <span>이용길</span>
+                <img class="bread-guide-icon" src="img/paddle.svg"/>
+                <span>박소현</span>
+            </div>
+            <p class="bread-date-with-location">2022년 10월 16일 12시 | 더 리버 벨라쿠치나</p>
+        </div>
+    </div>
+    <div class="who-is-layer">
+        <p class="who-is-guide">
+            아홉번의 가을을 함께한 영혼의 단짝<br/>
+            두사람이 드디어 결혼합니다.<br/>
+            <br/>
+            결혼이라는 즐거운 항해를 떠나려는<br/>
+            두 사람을 위해 부디 참석하여<br/>
+            자리를 빛내주세요.
+        </p>
+        <p class="who-is-detail">
+            <span class="parents-name">이동주 ・︎ 이미경</span>
+            <span class="house-order">의 장남</span>
+            <span class="child-name">이용길</span>
+        </p>
+        <p class="who-is-detail">
+            <span class="parents-name">박상준 ・ ︎김화숙</span>
+            <span class="house-order">의 차녀</span>
+            <span class="child-name">박소현</span>
+        </p>
+    </div>
+    <div class="our-story-layer">
+        <p class="our-story-title">
+            <img class="our-story-title-wheel" src="img/wheel-wh.svg">
+            <span>우리들의 이야기</span>
+            <img class="our-story-title-wheel" src="img/wheel-wh.svg">
+        </p>
+        <div class="image-slider-box" id="imageSlider">
+            <img class="slider-img" src="img/wedding/1.jpg">
+            <img class="slider-img" src="img/wedding/2.jpg">
+            <img class="slider-img" src="img/wedding/3.jpg">
+            <img class="slider-img" src="img/wedding/4.jpg">
+            <img class="slider-img" src="img/wedding/5.jpg">
+            <img class="slider-img" src="img/wedding/6.jpg">
+        </div>
+    </div>
+    <div class="how-to-come-layer">
+        <p class="how-to-come-title">
+            <img class="how-to-come-title-wheel" src="img/wheel-bk.svg">
+            <span>오시는 길</span>
+            <img class="how-to-come-title-wheel" src="img/wheel-bk.svg">
+        </p>
+        <div class="how-to-come-map" id="mapDiv">
+
+        </div>
+        <div class="how-to-address">
+            <p class="address-title">
+                더 리버 벨라쿠치나<br/>
+                <span class="address-detail">서울 서초구 반포동 1338</span>
+            </p>
+            <button class="copy-to-clip">주소복사</button>
+        </div>
+    </div>
+    <div class="how-to-call-layer">
+        <p class="how-to-call-title">
+            <img class="how-to-call-title-wheel" src="img/wheel-bk.svg">
+            <span>신랑 신부에게 연락하기</span>
+            <img class="how-to-call-title-wheel" src="img/wheel-bk.svg">
+        </p>
+    </div>
+    <div class="sorry-layer">
+        <p class="sorry-description">
+            코로나로 인해<br/>
+            많은 분들을 직접 모시지 못하는 점<br/>
+            넓은 아량으로 양해 부탁드리며,<br/>
+            축복해주시는 마음<br/>
+            평생 감사하며 잘 살겠습니다.
+        </p>
+        <img class="last-lupin" src="img/lupin.svg">
+    </div>
+
+
+
+<script>
+    $(document).ready(function() {
+        $('#imageSlider').bxSlider({
+            controls: false,
+            preloadImages: 'all',
+            slideWidth: '300',
+        });
+    })
+    $(".copy-to-clip").on("click", function() {
+
+        alert("클립보드에 복사 되었습니다.")
+    })
+</script>
+</body>
+</html>
