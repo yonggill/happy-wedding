@@ -7,13 +7,15 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
     <meta property="og:type" content="website"/>
-    <link rel="stylesheet" href="/static/css/base.css"/>
-    <link rel="stylesheet" href="/static/css/fonts/stylesheet.css"/>
+    <link rel="stylesheet" href="/static/css/base.css?5353"/>
+    <link rel="stylesheet" href="/static/css/fonts/stylesheet.css?5353"/>
+    <link rel="stylesheet" type="text/css" href="/static/lib/slick.css?5353"/>
+    <link rel="stylesheet" type="text/css" href="/static/lib/slick-theme.css?5353"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <script src="/static/js/jquery-3.6.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/static/lib/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="/static/lib/slick-theme.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="/static/lib/slick.min.js"></script>
+    <script type="text/javascript" src="/static/lib/slick.min.js?5353"></script>
     <script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=l7xx7c8ca1a333db4b12a716a65c628b6212"></script>
     <script type="text/javascript">
         function initTmap(){
@@ -131,7 +133,11 @@
         <img class="last-lupin" src="/static/img/lupin.svg">
     </div>
 
-
+<div id="ex1" class="modal">
+  <p>Thanks for clicking. That felt good.</p>
+    <a href="http://kko.to/k-E7Zg_XF">마음 전하기</a>
+  <a href="#" rel="modal:close">Close</a>
+</div>
 
 <script>
     $(document).ready(function() {
@@ -147,6 +153,9 @@
     $(".copy-to-clip").on("click", function() {
         copyToClipboard(this)
         alert("클립보드에 복사 되었습니다.")
+    })
+    $(".btn-send-heart").on("click", function() {
+        $("#ex1").modal()
     })
 
     function copyToClipboard(element) {
