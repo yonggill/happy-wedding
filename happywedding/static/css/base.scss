@@ -10,7 +10,7 @@ body {
 
   .bread-layer {
     text-align: center;
-    background: url("/static/img/layer-1-bg.svg") center 0 no-repeat;
+    background: url("/static/img/layer-1-bg.svg") center 0 repeat;
     color: white;
     height: 640px;
     padding-top: 64px;
@@ -49,7 +49,7 @@ body {
     text-align: center;
     height: 435px;
     padding-top: 80px;
-    background: url("/static/img/layer-2-bg.svg") center 0 no-repeat;
+    background: url("/static/img/layer-2-bg.svg") center 0 repeat;
     .who-is-guide {
       font-size: 18px;
       line-height: 21px;
@@ -76,8 +76,9 @@ body {
   .our-story-layer {
     text-align: center;
     height: 546px;
+    overflow: hidden;
     padding-top: 14px;
-    background: url("/static/img/layer-3-bg.svg") center 0 no-repeat;
+    background: url("/static/img/layer-3-bg.svg") center 0 repeat;
     .our-story-title {
       span {
         font-size: 16px;
@@ -91,37 +92,29 @@ body {
         margin-top: 1px;
       }
     }
-    .bx-wrapper {
-      border: none;
-      height: 400px !important;
-      background: transparent;
-      box-shadow: none;
-      display: inline-block;
-      .image-slider-box {
-        height: 400px;
-        background: transparent;
-      }
-      .slider-img {
+    .slider-img {
         border-radius: 32px;
         height: 400px;
+        margin-left: 16px;
+        margin-right: 16px;
       }
-      .bx-viewport {
-        height: 400px !important;
+    .image-slider-box {
+        height: 400px;
         background: transparent;
       }
-      .bx-pager {
-        .bx-pager-item {
-          .bx-pager-link {
-            background: white;
-            width: 4px;
-            height: 4px;
-            &.active {
-              background: #F77747;
-            }
-          }
+    .slick-dots {
+      li {
+        width: 4px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #fff;
+        &.slick-active {
+          background-color: #f77747;
         }
+        button {display: none;}
       }
     }
+
     .our-story-slider{
       width: 100%;
       background: transparent;

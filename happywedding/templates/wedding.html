@@ -9,9 +9,11 @@
     <meta property="og:type" content="website"/>
     <link rel="stylesheet" href="/static/css/base.css"/>
     <link rel="stylesheet" href="/static/css/fonts/stylesheet.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="/static/js/jquery-3.6.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/lib/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/lib/slick-theme.css"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/static/lib/slick.min.js"></script>
     <script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=l7xx7c8ca1a333db4b12a716a65c628b6212"></script>
     <script type="text/javascript">
         function initTmap(){
@@ -91,7 +93,7 @@
                 더 리버 벨라쿠치나<br/>
                 <span class="address-detail">서울 서초구 반포동 1338</span>
             </p>
-            <button class="copy-to-clip">주소복사</button>
+            <button class="copy-to-clip" data-address="서울특별시 서초구 반포동 1338">주소복사</button>
         </div>
     </div>
     <div class="how-to-call-layer">
@@ -106,7 +108,7 @@
                 <span class="call-to-name">이용길</span>
             </p>
             <a class="call-by-cellphone" href="tel:+821037038287"><img src="/static/img/phone.svg"/></a>
-            <a class="call-by-mail" href="mailto:yonggill@day-by-day.kr"><img src="/static/img/sns.svg"/></a>
+            <a class="call-by-mail" href="sms:+821037038287"><img src="/static/img/sns.svg"/></a>
         </div>
         <div class="call-to-w">
             <p class="call-to-info">
@@ -114,7 +116,7 @@
                 <span class="call-to-name">박소현</span>
             </p>
             <a class="call-by-cellphone" href="tel:+821085913144"><img src="/static/img/phone.svg"/></a>
-            <a class="call-by-mail" href="mailto:chacha@day-by-day.kr"><img src="/static/img/sns.svg"/></a>
+            <a class="call-by-mail" href="sms:+821085913144"><img src="/static/img/sns.svg"/></a>
         </div>
         <button class="btn-send-heart">신랑 신부에게 마음 전하기</button>
     </div>
@@ -134,16 +136,26 @@
 <script>
     $(document).ready(function() {
         initTmap();
-        $('#imageSlider').bxSlider({
-            controls: false,
-            preloadImages: 'all',
-            slideWidth: '300',
-        });
+        $('#imageSlider').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 1,
+            variableWidth: true,
+            dots: true,
+        })
     })
     $(".copy-to-clip").on("click", function() {
-
+        copyToClipboard(this)
         alert("클립보드에 복사 되었습니다.")
     })
+
+    function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).attr("data-address")).select();
+        document.execCommand("copy");
+        $temp.remove();
+    }
 </script>
 </body>
 </html>
