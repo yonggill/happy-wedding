@@ -52,6 +52,7 @@ body {
     background: url("/static/img/layer-2-bg.svg") center 0 repeat;
     .who-is-guide {
       font-size: 18px;
+      margin-top: 0;
       line-height: 21px;
       color: #000;
       margin-bottom: 48px;
@@ -73,13 +74,21 @@ body {
       }
     }
   }
+  .our-story-layer-wrapper {
+    height: 546px;
+    overflow: visible;
+    background-color: #0D35B8;
+  }
   .our-story-layer {
     text-align: center;
-    height: 546px;
+    height: 600px;
     overflow: hidden;
     padding-top: 14px;
-    background: url("/static/img/layer-3-bg.svg") center 0 repeat;
+
+    background: url("/static/img/layer-3-bg.svg") center bottom repeat;
     .our-story-title {
+      margin-top: 0;
+      margin-bottom: 24px;
       span {
         font-size: 16px;
         line-height: 21px;
@@ -103,11 +112,14 @@ body {
         background: transparent;
       }
     .slick-dots {
+      bottom: -45px;
       li {
-        width: 4px;
-        height: 4px;
-        border-radius: 2px;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
         background-color: #fff;
+        margin-left: 2px;
+        margin-right: 2px;
         &.slick-active {
           background-color: #f77747;
         }
@@ -124,7 +136,7 @@ body {
 
   .how-to-come-layer {
     text-align: center;
-    padding-top: 51px;
+    padding-top: 82px;
     padding-left: 32px;
     padding-right: 32px;
     .how-to-come-title {
@@ -184,8 +196,8 @@ body {
     }
   }
   .how-to-call-layer {
-    height: 331px;
-    padding-top: 30px;
+    height: 308px;
+    padding-top: 10px;
     text-align: center;
     .how-to-call-title {
       margin-bottom: 53px;
