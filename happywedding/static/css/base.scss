@@ -278,4 +278,83 @@ body {
       display: inline-block;
     }
   }
+  .jquery-modal.blocker {
+    padding: 0;
+
+  }
+  .modal-full-cover {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding:0;
+    background: url("/static/img/layer-4-bg.svg") center bottom no-repeat;
+    background-color: #fff;
+    .close-modal  {display: none !important;
+    }
+    .close-modal-btn {
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      cursor: pointer;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .man {
+      .name > span {
+        color: #0D35B8;
+      }
+    }
+    .woman {
+      .name > span {
+        color: #f77747;
+      }
+    }
+    .man, .woman {
+      text-align: center;
+      margin-bottom: 42px;
+      img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 16px;
+        display: inline-block;
+      }
+      a {
+        width: 54px;
+        height: 23px;
+        display: inline-block;
+        background: url("/static/img/kakaopay.svg");
+      }
+      .name {
+        font-family: GangwonEduAll, sans-serif;
+        font-size: 18px;
+        margin-bottom: 12px;
+        line-height: 21px;
+        font-weight: bold;
+        span {
+          font-weight: 400;
+          margin-right: 12px;
+        }
+      }
+
+    }
+    .thanks-to-couple {
+      text-align: center;
+      margin-bottom: 66px;
+      margin-top: 108px;
+      span {
+        font-size: 16px;
+        line-height: 21px;
+        font-family: PyeongChang, sans-serif;
+        color: #000;
+      }
+      .thanks-to-wheel {
+        vertical-align: top;
+        margin-top: 1px;
+        width: 20px;
+      }
+    }
+  }
 }

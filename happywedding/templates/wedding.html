@@ -133,14 +133,29 @@
         <img class="last-lupin" src="/static/img/lupin.svg">
     </div>
 
-<div id="ex1" class="modal">
-  <p>Thanks for clicking. That felt good.</p>
-    용길: <a href="http://kko.to/k-E7Zg_XF">http://kko.to/k-E7Zg_XF</a>
-    소현: <a href="http://kko.to/l9w-Vz0fv">http://kko.to/l9w-Vz0fv</a>
-  <a href="#" rel="modal:close">Close</a>
+<div id="ex1" class="modal modal-full-cover">
+  <p class="thanks-to-couple">
+      <img class="thanks-to-wheel" src="/static/img/wheel-bk.svg">
+      <span>신랑 신부에게 마음 전하기</span>
+      <img class="thanks-to-wheel" src="/static/img/wheel-bk.svg">
+  </p>
+    <div class="man">
+        <img src="/static/img/avatar-groom.svg">
+        <p class="name"><span>신랑</span>이용길</p>
+        <p>카카오 뱅크 3333-01-7814092</p>
+        <a href="http://kko.to/k-E7Zg_XF"></a>
+    </div>
+    <div class="woman">
+        <img src="/static/img/avatar-bride.svg">
+        <p class="name"><span>신부</span>박소현</p>
+        <p>카카오 뱅크 3333-03-8846186</p>
+        <a href="http://kko.to/l9w-Vz0fv"></a>
+    </div>
+    <a href="#" class="close-modal-btn" rel="modal:close"><img src="/static/img/close.svg"></a>
 </div>
 
 <script>
+    var $thanksModal;
     $(document).ready(function() {
         initTmap();
         $('#imageSlider').slick({
@@ -156,9 +171,8 @@
         alert("클립보드에 복사 되었습니다.")
     })
     $(".btn-send-heart").on("click", function() {
-        $("#ex1").modal()
+        $thanksModal = $("#ex1").modal();
     })
-
     function copyToClipboard(element) {
         var $temp = $("<input>");
         $("body").append($temp);
