@@ -111,13 +111,13 @@ body {
         margin-right: 16px;
         opacity: 0.7;
         border: 4px solid #000;
-      filter: drop-shadow(0px 0.830376px 7.19659px rgba(0, 0, 0, 0.5));
+      box-shadow: 0 3px 4px rgba(0,0,0,0.2);
       }
     .slider-img.slick-current {
       height: 400px;
       margin-top: 0;
       opacity: 1;
-      filter: drop-shadow(0px 6.08943px 8.85735px rgba(0, 0, 0, 0.5));
+      box-shadow: 0 6px 8px rgba(0,0,0,0.5);
     }
     .image-slider-box {
         height: 400px;
