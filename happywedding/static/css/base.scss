@@ -340,7 +340,7 @@ body {
     .man, .woman {
       text-align: center;
       margin-bottom: 42px;
-      img {
+      img.couple-photo {
         width: 70px;
         height: 70px;
         margin-bottom: 16px;
@@ -355,10 +355,12 @@ body {
       .bank {
         font-size: 16px;
         line-height: 16px;
+        margin-top: 0;
         img {
           width: 20px;
           height: 20px;
           margin-left: 16px;
+          margin-top: -1px;
           vertical-align: top;
           display: inline-block;
         }
@@ -367,6 +369,7 @@ body {
         font-family: GangwonEduAll, sans-serif;
         font-size: 18px;
         margin-bottom: 12px;
+        margin-top: 0;
         line-height: 21px;
         font-weight: bold;
         span {
