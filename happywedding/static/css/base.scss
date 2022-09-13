@@ -10,7 +10,7 @@ body {
 
   .bread-layer {
     text-align: center;
-    background: url("/static/img/layer-1-bg.svg") center 0 repeat;
+    background: url("/static/img/layer-1-bg.svg") center 0 repeat-x;
     color: white;
     height: 640px;
     padding-top: 64px;
@@ -49,7 +49,7 @@ body {
     text-align: center;
     height: 435px;
     padding-top: 80px;
-    background: url("/static/img/layer-2-bg.svg") center 0 repeat;
+    background: url("/static/img/layer-2-bg.svg") center 0 repeat-x;
     .who-is-guide {
       font-size: 18px;
       margin-top: 0;
@@ -84,8 +84,7 @@ body {
     height: 600px;
     overflow: hidden;
     padding-top: 14px;
-
-    background: url("/static/img/layer-3-bg.svg") center bottom repeat;
+    background: url("/static/img/layer-3-bg.svg") center bottom repeat-x;
     .our-story-title {
       margin-top: 0;
       margin-bottom: 24px;
@@ -101,12 +100,25 @@ body {
         margin-top: 1px;
       }
     }
+    .slick-list {
+      overflow: visible !important;
+    }
     .slider-img {
-        border-radius: 32px;
-        height: 400px;
+        border-radius: 36px;
+        margin-top: 30px;
+        height: 340px;
         margin-left: 16px;
         margin-right: 16px;
+        opacity: 0.7;
+        border: 4px solid #000;
+      filter: drop-shadow(0px 0.830376px 7.19659px rgba(0, 0, 0, 0.5));
       }
+    .slider-img.slick-current {
+      height: 400px;
+      margin-top: 0;
+      opacity: 1;
+      filter: drop-shadow(0px 6.08943px 8.85735px rgba(0, 0, 0, 0.5));
+    }
     .image-slider-box {
         height: 400px;
         background: transparent;
@@ -300,7 +312,7 @@ body {
     height: 100%;
     position: relative;
     padding:0;
-    background: url("/static/img/layer-4-bg.svg") center bottom no-repeat;
+    background: url("/static/img/layer-4-bg.svg") center bottom repeat-x;
     background-color: #fff;
     .close-modal  {display: none !important;
     }
@@ -355,7 +367,7 @@ body {
     .thanks-to-couple {
       text-align: center;
       margin-bottom: 66px;
-      margin-top: 108px;
+      margin-top: 68px;
       span {
         font-size: 16px;
         line-height: 21px;
