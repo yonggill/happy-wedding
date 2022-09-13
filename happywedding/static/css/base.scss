@@ -336,6 +336,7 @@ body {
         color: #f77747;
       }
     }
+
     .man, .woman {
       text-align: center;
       margin-bottom: 42px;
@@ -350,6 +351,17 @@ body {
         height: 23px;
         display: inline-block;
         background: url("/static/img/kakaopay.svg");
+      }
+      .bank {
+        font-size: 16px;
+        line-height: 16px;
+        img {
+          width: 20px;
+          height: 20px;
+          margin-left: 16px;
+          vertical-align: top;
+          display: inline-block;
+        }
       }
       .name {
         font-family: GangwonEduAll, sans-serif;
