@@ -17,11 +17,12 @@ from django.contrib import admin
 from django.views.static import serve
 from django.urls import path, re_path
 from django.conf import settings
-from happywedding.landing.views import IndexView
+from happywedding.landing.views import IndexView, IndexParentsView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', IndexView.as_view()),
+    path('pts/', IndexParentsView.as_view()),
     re_path(
         r"^static/(?P<path>.*)$",
         serve,

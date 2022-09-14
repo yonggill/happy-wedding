@@ -226,7 +226,7 @@ body {
       }
     }
     .call-to-h {
-      margin: 0 auto 27px;
+      margin: 0 auto 52px;
     }
     .call-to-w {
       margin: 0 auto;
@@ -242,6 +242,26 @@ body {
       width: 210px;
       font-family: GangwonEduAll, sans-serif;
       position: relative;
+      .send-by-kakaopay {
+        width: 54px;
+        height: 23px;
+        display: block;
+        margin: 12px auto;
+        background: url("/static/img/kakaopay.svg");
+      }
+      .bank {
+        width: 260px;
+        margin-left: -25px;
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 25px;
+        .copy-to-clip {
+          margin-left: 16px;
+          vertical-align: top;
+          color: #f77747;
+          display: inline-block;
+        }
+      }
       .call-to-info {
         display: inline-block;
         margin-top: 0;
