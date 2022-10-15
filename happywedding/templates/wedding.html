@@ -182,12 +182,6 @@
 <script>
     var $thanksModal;
     $(document).ready(function() {
-        try{
-            initTmap();
-        } catch (e) {
-            console.log(e)
-        }
-
         $('#imageSlider').slick({
             centerMode: true,
             centerPadding: '60px',
@@ -195,6 +189,13 @@
             variableWidth: true,
             dots: true,
         })
+        try{
+            initTmap();
+        } catch (e) {
+            console.log(e)
+        }
+
+
     })
     $(".copy-to-clip").on("click", function() {
         copyToClipboard(this)
