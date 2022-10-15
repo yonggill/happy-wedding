@@ -30,9 +30,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="/static/lib/slick.min.js?5353"></script>
-    <script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=l7xx7c8ca1a333db4b12a716a65c628b6212"></script>
+    <script type="module" src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=l7xx7c8ca1a333db4b12a716a65c628b6212"></script>
     <script type="text/javascript">
-        function initTmap(){
+        try{
+            function initTmap(){
             var map = new Tmapv2.Map("mapDiv",
                 {
                     center: new Tmapv2.LatLng(37.50707331016468,126.98468506336253), // 지도 초기 좌표
@@ -44,6 +45,11 @@
                 position: new Tmapv2.LatLng(37.50707331016468,126.98468506336253),
                 map: map
             });
+        }
+        } catch (e) {
+
+
+
         }
     </script>
 </head>
