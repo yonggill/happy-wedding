@@ -159,7 +159,11 @@
 <script>
     var $thanksModal;
     $(document).ready(function() {
-        initTmap();
+        try{
+            initTmap();
+        } catch (e) {
+            console.log(e)
+        }
         $('#imageSlider').slick({
             centerMode: true,
             centerPadding: '60px',
